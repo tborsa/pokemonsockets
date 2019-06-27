@@ -1,0 +1,19 @@
+.battle{
+    display:flex;
+    padding: 5vw;
+}
+.arena{
+    background-color: seashell;
+    border-radius: 15px;
+}
+.battle .button{
+    flex-grow: 1;
+    height: 40vw;
+}
+.battle .opponent{
+    flex-grow: 1;
+    height: 40vw;
+}
+.opponent img{
+    width: 100%;
+}

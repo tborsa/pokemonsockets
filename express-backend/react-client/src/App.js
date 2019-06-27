@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Battle from './Battle';
+import Attacker from './Attacker';
 import './index.css';
 import './App.css';
+import './Battle.css';
 
 
 
@@ -56,7 +59,7 @@ class Pokedex extends React.Component  {
     console.log(pokemonArray);
     let pokemons  = pokemonArray.map((element)=>{
         return(
-            <Pokemon selected={this.state.number}  changePokemon={this.changePokemon} name="charizard" number={element}></Pokemon>
+            <Pokemon id={element} selected={this.state.number}  changePokemon={this.changePokemon} name="charizard" number={element}></Pokemon>
         );
     })
 
@@ -78,6 +81,8 @@ class App extends React.Component {
       return (
         <div className="App">
           <Pokedex></Pokedex>
+          <Battle></Battle>
+          <Attacker></Attacker>
         </div>
       );
   }
