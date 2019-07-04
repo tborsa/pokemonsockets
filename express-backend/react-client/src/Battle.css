@@ -1,6 +1,8 @@
 .battle{
     display:flex;
     padding: 5vw;
+    margin: 8vw;
+    justify-content: space-between;
 }
 .arena{
     background-color: seashell;
@@ -9,11 +11,46 @@
 .battle .button{
     flex-grow: 1;
     height: 40vw;
+    background-color: lightgreen;
+    line-height: 40vw;
+    border-radius: 15px;
+    margin:30px;
+    color: lightcoral;
+    font-size: 4vw;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
 }
 .battle .opponent{
     flex-grow: 1;
-    height: 40vw;
+    max-width: 70%;
+    position: relative;
 }
 .opponent img{
-    width: 100%;
+    width: 90%;
+}
+.hide{
+  visibility: hidden;
+  width: 0px;
+}
+.healthbar{
+    width: 80%;
+    height: 3vw;
+    border-radius: 40px;
+    margin: auto;
+    background-color: lightcoral;
+}
+.healthbar .inner{
+    height:3vw;
+    border-radius:40px;
+    background-color: lightgreen;
+}
+.attack{
+    position: absolute;
+    top: 0;
+    margin-left:33%;
+
+}
+.hidden{
+    visibility: hidden;
 }

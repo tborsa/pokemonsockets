@@ -42,5 +42,4 @@ app.use(function(err, req, res, next) {
 app.get('*', (req,res) =>{
   res.sendFile(path.join(__dirname + '/react-client/build/index.html'));
 });
-
 module.exports = app;

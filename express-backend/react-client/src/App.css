@@ -1,40 +1,53 @@
-.App {
-  text-align: center;
+.app {
   background-color: lightcoral;
-  box-sizing: border-box;
+  padding: 3vw;
+}
+
+.main-pokemon {
+  background-color: seashell;
+  border-radius: 20px;
+  padding: 3vw;
+  flex-grow: 4;
+  flex-shrink: 1;
+  margin: 20px;
+}
+.main-pokemon img{
+  width: 100%;
+  background-color: lightgreen;
+  border-radius: 20px;
+}
+.main-pokemon button{
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: lightcoral;
+  font-weight: bold;
+  color: seashell;
+}
+.pokedex{
+  display:flex;
+  max-width: 900px;
+  margin: auto;
 }
 .preview{
   display: flex;
   flex-direction: column;
-}
-.pokedex{
-  display: flex;
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-}
-.main-pokemon{
-  background-color: seashell;
   flex-grow: 1;
-  border-radius: 20px;
-  padding-top: 3vw;
-}
-.main-pokemon img{
-  width: 90%;
-  background-color: lightgreen;
-  border-radius: 20px;
+  flex-shrink: 4;
+  max-width: 400px;
 }
 .pokemon{
   background-color: seashell;
+  padding: 3vw;
+  margin: 20px;
   border-radius: 20px;
-  max-width: 200px;
-  padding: 20px;
-  margin: 10px;
+}
+.pokemon img{
+  width: 100%;
 }
 .pokemon.selected{
-  background-color: lemonchiffon;
+  background-color: lightgoldenrodyellow;
 }
 .pokemon p{
-  position: absolute; 
-  font-weight: bold;
+  position: absolute;
 }
